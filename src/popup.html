@@ -11,18 +11,22 @@
     <input type="text" id="localPathForRepositories" />
     <label>The IDE you want to use to open GitHub links:</label>
     <select id="defaultIde">
-      <option value="vscode">Visual Studio Code</option>
-      <option value="vscode-wsl">Visual Studio Code [WSL: Ubuntu]</option>
+      <optgroup label="Microsoft">
+        <option value="vscode">Visual Studio Code</option>
+        <option value="vscode-wsl">Visual Studio Code [WSL: Ubuntu]</option>
+        <option value="vscode-insiders">Visual Studio Code Insiders</option>
+        <option value="vscode-insiders-wsl">Visual Studio Code Insiders [WSL: Ubuntu]</option>
+      </optgroup>
       <option value="vscodium">VSCodium</option>
       <option value="vscodium-wsl">VSCodium [WSL: Ubuntu]</option>
-      <option value="vscode-insiders">Visual Studio Code Insiders</option>
-      <option value="vscode-insiders-wsl">Visual Studio Code Insiders [WSL: Ubuntu]</option>
-      <option value="phpstorm">PhpStorm</option>
-      <option value="intellij-idea">IntelliJ IDEA</option>
-      <option value="webstorm">WebStorm</option>
-      <option value="goland">GoLand</option>
-      <option value="clion">CLion</option>
-      <option value="jetbrains-webserver">JetBrains editor (using built-in web server)</option>
+      <optgroup label="JetBrains">
+        <option value="intellij-idea">IntelliJ IDEA (via Toolbox)</option>
+        <option value="clion">CLion (via Toolbox)</option>
+        <option value="goland">GoLand (via Toolbox)</option>
+        <option value="phpstorm">PhpStorm (via Toolbox)</option>
+        <option value="webstorm">WebStorm (via Toolbox)</option>
+        <option value="jetbrains-webserver">JetBrains editor (using built-in web server)</option>
+      </optgroup>
     </select>
     <label>Where to show the icon ?</label>
     <input type="checkbox" id="showIconInFileTree" /> Show icon in file tree<br />

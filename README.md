@@ -34,6 +34,7 @@ Once the extension is installed:
   - PhpStorm <span style="color: #999;">(via Toolbox)</span>
   - WebStorm <span style="color: #999;">(via Toolbox)</span>
   - Any JetBrains editor (using built-in web server)
+- Cursor
 
 WSL with the Ubuntu distribution is also supported on VS Code, VSCodium and VS Code Insiders for Windows.
 
@@ -69,6 +70,7 @@ Need a feature? Want to report a bug? Feel free to open an issue or a pull reque
 
 - Bug fixed: Support the latest scheme of JetBrains IDEs via Toolbox
 - Added support for files on "Files changed" tab
+- Added support for Cursor IDE
 - Grouping IDEs by vendor in settings
 - New versioning scheme: using current date as a plugin version
 

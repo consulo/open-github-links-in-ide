@@ -43,6 +43,11 @@ const run = async () => {
       location.href = url
       return url
     },
+    cursor: (repo: string, file: string, line?: string) => {
+      const url = `cursor://file/${OPTIONS.localPathForRepositories}/${repo}/${file}:${line ?? "1"}`
+      location.href = url
+      return url
+    },
     phpstorm: (repo: string, file: string, line?: string) => {
       const url = `jetbrains://php-storm/navigate/reference?project=${repo}&path=${file}:${line ?? "1"}`
       location.href = url

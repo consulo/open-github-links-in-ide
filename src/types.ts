@@ -11,6 +11,7 @@ export type Editor =
   | "goland"
   | "clion"
   | "jetbrains-webserver"
+  | "cursor"
 
 type IconSize = 16 | 32 | 48 | 64 | 128
 
@@ -64,6 +65,10 @@ export const EDITORS: {
   "jetbrains-webserver": {
     name: "JetBrains",
     getIcon: (size: IconSize) => `icons/jetbrains${size}.png`,
+  },
+  cursor: {
+    name: "Cursor",
+    getIcon: (size: IconSize) => `icons/cursor${size}.png`,
   },
 }
 

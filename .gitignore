@@ -1,5 +1,7 @@
+.claude
 .consulo
 .idea
+.vscode
 node_modules
 build
 dist

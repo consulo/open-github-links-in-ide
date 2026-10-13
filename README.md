@@ -68,6 +68,7 @@ Need a feature? Want to report a bug? Feel free to open an issue or a pull reque
 ### Version 2026.10.13
 
 - Bug fixed: Support the latest scheme of JetBrains IDEs via Toolbox
+- Added support for files on "Files changed" tab
 - Grouping IDEs by vendor in settings
 - New versioning scheme: using current date as a plugin version
 

@@ -19,9 +19,7 @@ const run = async () => {
       return url
     },
     "vscode-wsl": (repo: string, file: string, line?: string) => {
-      const url = `vscode://vscode-remote/wsl+Ubuntu/${OPTIONS.localPathForRepositories}/${repo}/${file}:${
-        line ?? "1"
-      }:1`
+      const url = `vscode://vscode-remote/wsl+Ubuntu/${OPTIONS.localPathForRepositories}/${repo}/${file}:${line ?? "1"}:1`
       location.href = url
       return url
     },
@@ -31,9 +29,7 @@ const run = async () => {
       return url
     },
     "vscodium-wsl": (repo: string, file: string, line?: string) => {
-      const url = `vscodium://vscode-remote/wsl+Ubuntu/${OPTIONS.localPathForRepositories}/${repo}/${file}:${
-        line ?? "1"
-      }:1`
+      const url = `vscodium://vscode-remote/wsl+Ubuntu/${OPTIONS.localPathForRepositories}/${repo}/${file}:${line ?? "1"}:1`
       location.href = url
       return url
     },
@@ -43,41 +39,37 @@ const run = async () => {
       return url
     },
     "vscode-insiders-wsl": (repo: string, file: string, line?: string) => {
-      const url = `vscode-insiders://vscode-remote/wsl+Ubuntu/${OPTIONS.localPathForRepositories}/${repo}/${file}:${
-        line ?? "1"
-      }:1`
+      const url = `vscode-insiders://vscode-remote/wsl+Ubuntu/${OPTIONS.localPathForRepositories}/${repo}/${file}:${line ?? "1"}:1`
       location.href = url
       return url
     },
     phpstorm: (repo: string, file: string, line?: string) => {
-      const url = `phpstorm://open?file=${OPTIONS.localPathForRepositories}/${repo}/${file}&line=${line ?? "1"}`
+      const url = `jetbrains://php-storm/navigate/reference?project=${repo}&path=${file}:${line ?? "1"}`
       location.href = url
       return url
     },
     "intellij-idea": (repo: string, file: string, line?: string) => {
-      const url = `idea://open?file=${OPTIONS.localPathForRepositories}/${repo}/${file}&line=${line ?? "1"}`
+      const url = `jetbrains://idea/navigate/reference?project=${repo}&path=${file}:${line ?? "1"}`
       location.href = url
       return url
     },
     webstorm: (repo: string, file: string, line?: string) => {
-      const url = `webstorm://open?file=${OPTIONS.localPathForRepositories}/${repo}/${file}&line=${line ?? "1"}`
+      const url = `jetbrains://web-storm/navigate/reference?project=${repo}&path=${file}:${line ?? "1"}`
       location.href = url
       return url
     },
     goland: (repo: string, file: string, line?: string) => {
-      const url = `goland://open?file=${OPTIONS.localPathForRepositories}/${repo}/${file}&line=${line ?? "1"}`
+      const url = `jetbrains://goland/navigate/reference?project=${repo}&path=${file}:${line ?? "1"}`
       location.href = url
       return url
     },
     clion: (repo: string, file: string, line?: string) => {
-      const url = `clion://open?file=${OPTIONS.localPathForRepositories}/${repo}/${file}&line=${line ?? "1"}`
+      const url = `jetbrains://clion/navigate/reference?project=${repo}&path=${file}:${line ?? "1"}`
       location.href = url
       return url
     },
     "jetbrains-webserver": (repo: string, file: string, line?: string) => {
-      const url = `http://localhost:63342/api/file?file=${OPTIONS.localPathForRepositories}/${repo}/${file}&line=${
-        line ?? "1"
-      }`
+      const url = `http://localhost:63342/api/file?file=${OPTIONS.localPathForRepositories}/${repo}/${file}&line=${line ?? "1"}`
       fetch(url).catch(() => alert(`Unable to open the file.\nIs the built-in web server started on localhost:63342 ?`))
       return url
     },
